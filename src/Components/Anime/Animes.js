@@ -9,7 +9,7 @@ const Animes = ({ animes, text }) => (
     <div className="root">
       <Grid container spacing={3} justufy="center">
         {animes.map((anime) => {
-          const { mal_id, image_url, title } = anime.anime;
+          const { mal_id, image_url, title } = anime;
           return <Anime key={mal_id} image_url={image_url} title={title} />;
         })}
       </Grid>

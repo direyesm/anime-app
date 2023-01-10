@@ -19,7 +19,7 @@ const AnimeContextProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => {
         setLoading(true);
-        setAnimes(data);
+        setAnimes(data.top);
       })
       .catch((err) => console.log(err));
   };
